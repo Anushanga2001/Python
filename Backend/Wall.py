@@ -11,3 +11,14 @@ print(txt[2])
 # replace letters
 a = "Hello, World!"
 print(a.replace("H", "A"))
+
+# List of python
+# list can contain different types of data
+name = ["Anushanga", "Kaluarachchi", 45, "Anujaya", 36, "Chathura"]
+print(name[2])
+
+# append a value
+name.append("Nimal")
+print(name)
+
+print(name[0:3])
