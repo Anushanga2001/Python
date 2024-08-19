@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Connect the CSS file -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='Cal.css') }}">
+    <title>Home Page</title>
+</head>
+<body>
+    <nav id="nav">
+        <a href="/test"><h2>Connect to the Test Page</h2></a>
+    </nav>
+    <h1><center>This is the Home page</center></h1>
+    <!-- Add an image -->
+        <center>
+            <img style="width: 300px; height: 200px"  src="https://cdn.pixabay.com/photo/2017/08/30/01/05/milky-way-2695569_1280.jpg" alt="milky way">
+        </center>
+
+        <!-- create a form and pass that form values to the database -->
+
+        <form action="/add" method="POST">
+            <label for="num1">Number 1:</label>
+            <input type="text" id="num1" name="num1"><br><br>
+            <label for="num2">Number 2:</label>
+            <input type="text" id="num2" name="num2"><br><br>
+            <input type="submit" value="Add">
+        </form>
+
+        <!-- pass the values to the database -->
+
+        <p id="result">{{ result }}</p>
+        <p id="result">{{ result1 }}</p>
+        <p id="result">{{ result2 }}</p>
+        <p id="result">{{ result3 }}</p>
+        <p id="result">{{ result4 }}</p>
+</body>
+</html>
