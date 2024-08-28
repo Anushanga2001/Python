@@ -1,5 +1,3 @@
-Here's a refined description you can include in your Python repository on GitHub:
-
 ---
 
 ### Python Learning Journey
