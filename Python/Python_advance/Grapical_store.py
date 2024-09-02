@@ -13,7 +13,7 @@ import numpy as np
 
 bin_edges = [0, 10, 20, 30, 40, 50, 60, 70, 80, 90, 100]	# x axis
 
-plt.hist(df_swing['dem_share'], bins=bin_edges)
+# plt.hist(df_swing['dem_share'], bins=bin_edges)
 plt.show()
 
 # seaborn library
