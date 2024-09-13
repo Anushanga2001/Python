@@ -9,33 +9,29 @@ def mul(x,y):
 
 def div(x,y):
     if y==0:
-        return "Error"
+        print("Can't divide by zero")
     else:
         return x/y
+    
+print ("Select operation.")
+print ("1.Add")
+print ("2.Subtract")
+print ("3.Multiply")
+print("4.Divide")
 
-while True:
-    print("Press 1 for addition")
-    print("Press 2 for subtraction")
-    print("Press 3 for multiplication")
-    print("Press 4 for division")
-    print("Press 5 for exit")
+def num(x, y):
+    x = int(input("Enter first number: "))
+    y = int(input("Enter second number: "))
 
-    choice = int(input("Enter your choice: "))
-
-    if (choice == 5):
-        exit()
-
-    if (choice == 1 or choice == 2 or choice == 3 or choice == 4):
-        x = int(input("Enter first number: "))
-        y = int(input("Enter second number: "))
-
-    if choice == 1:
-        print(add(x,y))
-    elif choice == 2:
-        print(sub(x,y))
-    elif choice == 3:
-        print(mul(x,y))
-    elif choice == 4:
-        print(div(x,y))
-    else:
-        print("Invalid Input")
+Enter = int(input("Enter choice(1/2/3/4): "))
+if (Enter == 5):
+    print("Invalid input")
+    exit()
+elif (Enter == 1):
+    print(add(x,y))
+elif (Enter == 2):
+    print(sub(x,y))
+elif (Enter == 3):
+    print(mul(x,y))
+elif (Enter == 4):
+    print(div(x,y))
